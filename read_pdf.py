@@ -54,7 +54,7 @@ def score_test(fname,collection_name,prefix,mongodb_id):
     id_value = id_regex.findall(fname.filename)
     print id_value,id_value[0],len(id_value)
     # Connect to MongoDB
-    client = MongoClient('10.106.199.110',27017)
+    client = MongoClient('xx.xx.xx.xx',27017)
     db = client.mtcf
     temp = 'db.'+collection_name
     collection = eval(temp)
